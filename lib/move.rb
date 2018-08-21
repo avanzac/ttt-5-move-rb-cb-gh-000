@@ -6,4 +6,12 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def input_to_index(user_input)
+  puts "Please enter a number between 1 and 9"
+  user_input= gets.strip
+  user_input.to_i
+  converted_input= user_input - 1
+end
+
+
 # code your input_to_index and move method here!
