@@ -9,7 +9,8 @@ end
 def input_to_index(user_input)
   puts "Please enter a number between 1 and 9"
   user_input= gets.strip
-  converted_input = user_input.to_i - 1
+  user_input.to_i
+  converted_input = input_to_index(user_input)
 
 
 
